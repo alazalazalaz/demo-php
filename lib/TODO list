@@ -1,0 +1,11 @@
+TODO list
+
+1、编写reactor(event)类，底层用一个interface规定好add,del接口
+2、编写tcp类，实现函数为connect(), read(), write(), close()
+3、编写回调函数(worker)类，实现如下：
+	worker::onConnect()回调
+	worker::onRead()回调
+	worker::write()主动
+	worker::onClose()回调
+	worker::close()主动
+	worker::writeAll()主动
